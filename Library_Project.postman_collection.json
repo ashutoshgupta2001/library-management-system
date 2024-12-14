@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "6a4bdc38-cf4b-48fb-ad9f-acc76826bc4e",
+		"name": "Library_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24791303"
+	},
+	"item": [
+		{
+			"name": "create_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE4ODM0MSwianRpIjoiNDhjNjJkNWItYjQ3OS00ZTYxLThmMTUtYWRlYzMzNTM5MTg4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFzaHV0b3NoZ3VwdGFAZ21haWwuY29tIiwibmJmIjoxNzM0MTg4MzQxLCJjc3JmIjoiNzhhZWM3MGUtODhjNy00MTIwLWFkY2ItYmVlNWVmOWJiYWIxIiwiZXhwIjoxNzM0MTg5MjQxfQ.38UD2MPr4R1Hh5Ov4-JqmN9KX86QrkGlDqr_WAde-Rs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"pritam@gmail.com\",\n    \"password\":\"pritam123\"\n    // \"admin_user\":true \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/admin/create_user"
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"ashutoshgupta@gmail.com\",\n    \"password\":\"ashutosh123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "view_requests",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE4ODc0NiwianRpIjoiOTBiOTY0NGQtOTM3Mi00OTkwLWFhZTUtMDkyOGRjZGJiMmYzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFzaHV0b3NoZ3VwdGFAZ21haWwuY29tIiwibmJmIjoxNzM0MTg4NzQ2LCJjc3JmIjoiNjc1OTlhN2MtYWFhMS00ZTZiLTg5OWQtNzhmNmUyOWJlZTllIiwiZXhwIjoxNzM0MTg5NjQ2fQ.9kMOHAJBcRBLEyvF-Tk4ANjf0PNpRsNfkifxlRSTd8o",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:5000/api/admin/view_requests"
+			},
+			"response": []
+		},
+		{
+			"name": "get_books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE4OTYxMSwianRpIjoiNWEyYjlhZWYtOGIyNC00MzU4LThiOGEtYjExMmYwNzU5N2RmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InJvc2hhbmt1bWFyQGdtYWlsLmNvbSIsIm5iZiI6MTczNDE4OTYxMSwiY3NyZiI6IjFlMmU5ZDJiLWUxYWQtNGM0NS04NmJmLWQ0NWI5YjhiZDA1MSIsImV4cCI6MTczNDE5MDUxMX0.ByLBagnoPxE-neqikIAcrfMfg_AIE-MbF-LuWkMnOSg",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:5000/api/books"
+			},
+			"response": []
+		},
+		{
+			"name": "create-book-request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE4OTYxMSwianRpIjoiNWEyYjlhZWYtOGIyNC00MzU4LThiOGEtYjExMmYwNzU5N2RmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InJvc2hhbmt1bWFyQGdtYWlsLmNvbSIsIm5iZiI6MTczNDE4OTYxMSwiY3NyZiI6IjFlMmU5ZDJiLWUxYWQtNGM0NS04NmJmLWQ0NWI5YjhiZDA1MSIsImV4cCI6MTczNDE5MDUxMX0.ByLBagnoPxE-neqikIAcrfMfg_AIE-MbF-LuWkMnOSg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book_id\":1,\n    \"start_date\":\"2024-12-14\",\n    \"end_date\":\"2024-12-25\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/api/book-request"
+			},
+			"response": []
+		},
+		{
+			"name": "admin-user-history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE5MDgxNCwianRpIjoiMTdhOWEzODktNjcwNS00Nzg2LWI2Y2YtMWZmY2NkZTgxYjA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFzaHV0b3NoZ3VwdGFAZ21haWwuY29tIiwibmJmIjoxNzM0MTkwODE0LCJjc3JmIjoiZGNkZGU0MjAtMmEwZC00MmIwLTgxNmUtNDRhM2M1OWQxYzNmIiwiZXhwIjoxNzM0MTkxNzE0fQ.hVNucRum7sAHFoxCg8Wmjx6XxauyDlxoMrSfDvHEvLQ",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:5000/api/admin/user_history/2"
+			},
+			"response": []
+		},
+		{
+			"name": "user-history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE5MDgxNCwianRpIjoiMTdhOWEzODktNjcwNS00Nzg2LWI2Y2YtMWZmY2NkZTgxYjA3IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFzaHV0b3NoZ3VwdGFAZ21haWwuY29tIiwibmJmIjoxNzM0MTkwODE0LCJjc3JmIjoiZGNkZGU0MjAtMmEwZC00MmIwLTgxNmUtNDRhM2M1OWQxYzNmIiwiZXhwIjoxNzM0MTkxNzE0fQ.hVNucRum7sAHFoxCg8Wmjx6XxauyDlxoMrSfDvHEvLQ",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:5000/api/user/history"
+			},
+			"response": []
+		},
+		{
+			"name": "download_history",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczNDE5MDk3MCwianRpIjoiZmM4MTZkMWUtMzcyOS00ZjBkLWIxOTMtY2IzMWM1MmMwMmUwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InJvc2hhbmt1bWFyQGdtYWlsLmNvbSIsIm5iZiI6MTczNDE5MDk3MCwiY3NyZiI6ImZlYTE3MzY5LTI1ZmMtNDA2Yy05MDNiLWU0MDlkMDk3YzJjYyIsImV4cCI6MTczNDE5MTg3MH0.SFEaYn9OIzp9Q87TRH05fQZEOGPc5GHh3QV6z7a3dr0",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:5000/api/user/download_history"
+			},
+			"response": []
+		}
+	]
+}

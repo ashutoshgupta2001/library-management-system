@@ -13,3 +13,5 @@ Library User APIs:
     Get list of books
     Submit a request to borrow a book for specific dates (date1 to date2).
     View personal book borrow history.
+
+Note : Postman Api collection has been also present in the repository. Add it to your postman and perform APIs.    
